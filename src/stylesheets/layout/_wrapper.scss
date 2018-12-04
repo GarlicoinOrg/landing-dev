@@ -1,6 +1,9 @@
 [class$='Wrapper'] {
+  flex: 1;
   position: relative;
-  min-height: 80vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
   z-index: 1;
   .title {
     margin-bottom: 8pt;

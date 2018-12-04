@@ -2,7 +2,7 @@
 // This file contains all application-wide Sass mixins.
 // -----------------------------------------------------------------------------
 
-@import "variables";
+@import 'variables';
 
 @mixin screen($breakpoint) {
   // Retrieves the value from the key
@@ -70,17 +70,15 @@
   position: absolute;
   $displace-x: 50%;
   $displace-y: 50%;
-  @if $x == "right" {
+  @if $x == 'right' {
     right: $x-val;
-  }
-  @else {
+  } @else {
     left: $x-val;
     $displace-x: $displace-x * -1;
   }
-  @if $y == "bottom" {
+  @if $y == 'bottom' {
     bottom: $y-val;
-  }
-  @else {
+  } @else {
     top: $y-val;
     $displace-y: $displace-y * -1;
   }
@@ -92,7 +90,7 @@
     .navBtn {
       &:nth-of-type(#{$num}) {
         font-weight: bold;
-        border-bottom: 1px solid $accent1;
+        box-shadow: 0 2px 0 0 $accent1;
       }
     }
   }
@@ -108,12 +106,34 @@
 
 @mixin route-link($color: $accent-color-purple) {
   color: $color;
-  transition: all .2s ease;
+  transition: all .3s ease;
+  position: relative;
+  &::after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transform-origin: 50% 50%;
+    width: 2px;
+    height: 2px;
+    background: transparent;
+    content: "";
+    transition: all .3s ease;
+  }
   &:hover {
-    background: $color;
-    color: $bg;
-    &:not(.navBtn) {
-      padding: 4pt;
+    background: transparent;
+    &::after {
+      width: 100%;
+      background: $color;
+    }
+  }
+  &.navBtn {
+    &::after {
+      display: none;
+    }
+    &:hover {
+      background: $color;
+      color: $bg;
     }
   }
 }

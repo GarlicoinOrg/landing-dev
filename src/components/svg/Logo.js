@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 export default ({ name }) => (
   <svg xmlns="http://www.w3.org/2000/svg" fill="#754c68" viewBox="0 0 560 560" className={name}>

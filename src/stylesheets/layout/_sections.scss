@@ -7,9 +7,9 @@
     text-align: left;
     text-indent: 1em;
     color: #333333;
-    font-size:18px;
+    font-size: 18px;
     &::first-letter {
-      font-size:26px;
+      font-size: 26px;
       font-weight: bolder;
       max-width: 800px;
     }
@@ -41,10 +41,10 @@
       }
     }
     .discordLink {
-      background: #738AD7;
+      background: #738ad7;
     }
     .redditLink {
-      background: #FC461E;
+      background: #fc461e;
     }
     .discordPlaceholder {
       .discordIframe {

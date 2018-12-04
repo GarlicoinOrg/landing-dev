@@ -61,6 +61,7 @@
     display: flex;
   }
   .mainBanner {
+    height: calc(100vh - #{$nav-height});
     h1 {
       font-size: 18pt;
     }
@@ -86,7 +87,8 @@
   }
   .onboardingWrapper {
     .container {
-      a, .viewAll {
+      a,
+      .viewAll {
         width: 100%;
         text-align: center;
       }

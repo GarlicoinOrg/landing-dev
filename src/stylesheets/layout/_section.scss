@@ -2,7 +2,7 @@
   position: relative;
   padding: 64pt 24pt;
   border-top: 1px solid $darker-light-grey;
-  transform: translate3d(0,0,0);
+  transform: translate3d(0, 0, 0);
   z-index: 2;
   &:nth-of-type(odd) {
     background: $bg;
@@ -13,7 +13,8 @@
   h1 {
     font-size: 1.8em;
   }
-  & > h1, & > h2 {
+  & > h1,
+  & > h2 {
     text-align: center;
   }
   .title {

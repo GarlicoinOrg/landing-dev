@@ -1,6 +1,6 @@
-input[type=text] {
+input[type='text'] {
   outline-width: 2px;
-  transition: outline .1s ease-in;
+  transition: outline 0.1s ease-in;
   &:valid {
     outline-color: lighten(#00c300, 2);
   }
@@ -8,4 +8,3 @@ input[type=text] {
     outline-color: lighten(red, 2);
   }
 }
-

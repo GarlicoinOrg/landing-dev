@@ -7,16 +7,12 @@ import Features from 'src/layout/home/Features'
 import Progress from 'src/layout/home/Progress'
 import Resources from 'src/layout/home/Resources'
 
-export default class Home extends React.Component {
-  render() {
-    return (
-      <App wrapper="mainWrapper" page="home">
-        <MainHeader />
-        <Description />
-        <Features />
-        <Progress />
-        <Resources />
-      </App>
-    )
-  }
-}
+export default () => (
+  <App wrapper="mainWrapper" page="home">
+    <MainHeader />
+    <Description />
+    <Features />
+    <Progress />
+    <Resources />
+  </App>
+)

@@ -9,7 +9,9 @@ export default () => (
       <div className="emailSignup">
         <div className="emailOverlay">COMING SOON.</div>
         <input type="email" name="EMAIL" placeholder="Email Address" />
-        <button type="submit" className="btn-blue" name="subscribe">Sign Up</button>
+        <button type="submit" className="btn-blue" name="subscribe">
+          Sign Up
+        </button>
       </div>
       <Link to="/">
         <Logo name="footerIcon" />
@@ -43,9 +45,7 @@ export default () => (
             <Link to="/onboarding">Get Started</Link>
           </li>
           <li>
-            <a href="mailto:garlicoindevs@gmail.com">
-              garlicoindevs@gmail.com
-            </a>
+            <a href="mailto:garlicoindevs@gmail.com">garlicoindevs@gmail.com</a>
           </li>
           <li>FAQ (coming soon.)</li>
         </ul>
@@ -54,11 +54,9 @@ export default () => (
     <div className="copyright">
       © 2018 by Garlicoin Org. All rights reserved
       <span>
-		        <Link to="#">Terms of Use </Link>
-            | <Link to="#">Privacy Policy </Link>
-            | <Link to="#">DMCA Policy </Link>
-            | <Link to="#">Disclaimer</Link>
+        <Link to="#">Terms of Use </Link>| <Link to="#">Privacy Policy </Link>|{' '}
+        <Link to="#">DMCA Policy </Link>| <Link to="#">Disclaimer</Link>
       </span>
     </div>
   </div>
-);
+)

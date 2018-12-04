@@ -10,15 +10,15 @@
   @include theme($accent-color-blue, $accent-color-lavender, $download-gradient, 4);
 }
 
-.routeLink[href="/onboarding"] {
+.routeLink[href='/onboarding'] {
   @include route-link($accent-color-yellow);
 }
-.routeLink[href="/downloads"] {
+.routeLink[href='/downloads'] {
   @include route-link($accent-color-blue);
 }
-.routeLink[href="/"] {
+.routeLink[href='/'] {
   @include route-link($accent-color-purple);
 }
-[href="/resources"] {
+[href='/resources'] {
   color: $accent-color-orange;
 }

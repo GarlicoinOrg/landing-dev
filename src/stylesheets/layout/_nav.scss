@@ -1,6 +1,7 @@
 nav {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -17,10 +18,10 @@ nav {
     align-items: center;
     height: 100%;
     padding: 0 16pt;
-    font-size: 1.2em;
+    font-size: 1.3em;
+    font-weight: bold;
     cursor: pointer;
-    color: inherit;
-    transition: all .15s ease;
+    transition: all 0.15s ease;
     &:hover {
       color: $bg;
       background-color: $accent-color-purple;
@@ -32,8 +33,10 @@ nav {
     margin-right: auto;
     color: $accent-color-yellow;
     .logo {
-      height: 16pt;
+      height: 20pt;
       fill: $accent-color-yellow;
+      stroke: $text-color;
+      stroke-width: 2px;
     }
     span {
       font-size: 2em;
@@ -67,13 +70,13 @@ nav {
   padding: 8pt;
   font-size: $tM;
   border-left: 1px solid $darker-light-grey;
-  &[href="/"] {
+  &[href='/'] {
     color: $accent-color-purple;
   }
-  &[href="/onboarding"] {
+  &[href='/onboarding'] {
     color: $accent-color-yellow;
   }
-  &[href="/downloads"] {
+  &[href='/downloads'] {
     color: $accent-color-blue;
   }
   .icon {

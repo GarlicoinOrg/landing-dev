@@ -8,8 +8,8 @@ export default ({ icon, title, children }) => (
       <Icon icon={icon} />
     </div>
     <div className="desc">
-      <h2>{ title }</h2>
-      { children }
+      <h2>{title}</h2>
+      {children}
     </div>
   </div>
 )

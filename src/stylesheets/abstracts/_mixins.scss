@@ -16,7 +16,7 @@
     }
   }
 
-    // If the key doesn't exist in the map
+  // If the key doesn't exist in the map
   @else {
     @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
         + "Please make sure it is defined in `$breakpoints` map.";
@@ -106,7 +106,7 @@
 
 @mixin route-link($color: $accent-color-purple) {
   color: $color;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
   position: relative;
   &::after {
     position: absolute;
@@ -117,8 +117,8 @@
     width: 2px;
     height: 2px;
     background: transparent;
-    content: "";
-    transition: all .3s ease;
+    content: '';
+    transition: all 0.3s ease;
   }
   &:hover {
     background: transparent;

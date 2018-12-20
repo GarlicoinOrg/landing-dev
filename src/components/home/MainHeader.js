@@ -3,11 +3,13 @@ import Link from 'gatsby-link'
 
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 import Icon from 'src/components/Icon'
-import logo from 'src/_assets/logo.png'
+import Logo from 'src/components/svg/Logo'
+// import logo from 'src/_assets/garlicoin-logo.svg'
 
 export default () => (
   <div className="mainBanner">
-    <img src={logo} className="logoBanner" alt="Logo" />
+    {/*<img src={logo} className="logoBanner" alt="Logo" />*/}
+    <Logo className="logoBanner" />
     <h1>
       Garlicoin is the new, friendly, decentralized cryptocurrency that you've never heard of.
     </h1>

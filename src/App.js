@@ -22,8 +22,8 @@ export default ({ wrapper, page, children }) => (
         {
           httpEquiv: 'Content-Security-Policy',
           content:
-            "default-src 'self' ; script-src 'self' 'unsafe-inline' *.disqus.com a.disquscdn.com requirejs.org www.google-analytics.com; style-src 'self' 'unsafe-inline' a.disquscdn.com; img-src 'self' *; media-src 'self' ; frame-src disqus.com;",
-        },
+            "default-src 'self' ; script-src 'self' 'unsafe-inline' *.disqus.com a.disquscdn.com requirejs.org www.google-analytics.com; style-src 'self' 'unsafe-inline' a.disquscdn.com; img-src 'self' *; media-src 'self' ; frame-src disqus.com;"
+        }
       ]}
       link={[{ href: logo, rel: 'icon', type: 'image/x-icon' }]}
     />

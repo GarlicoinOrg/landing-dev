@@ -4,35 +4,16 @@
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  //height: calc(100vh - (#{$nav-height} * 2));
   height: 100vh;
   min-height: 400pt;
-  //padding-top: $nav-height;
   background: $home-gradient;
   background-size: 400% 400%;
   animation: animate-gradient 5s infinite;
   .logoBanner {
-    display: block;
-    height: 120pt;
+    height: 40vh;
     margin: 8pt 0;
-    &.animate {
-      animation: spin 1s linear infinite, moveLeftToRight 2.5s linear infinite;
-    }
-    @keyframes spin {
-      from {
-        transform: rotate(0deg);
-      }
-      to {
-        transform: rotate(360deg);
-      }
-    }
-    @keyframes moveLeftToRight {
-      0% {
-        margin-left: -20%;
-      }
-      100% {
-        margin-left: 100%;
-      }
+    path {
+      fill: $accent-color-yellow;
     }
   }
   h1 {

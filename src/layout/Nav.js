@@ -19,7 +19,7 @@ export default () => (
     <Link to="/downloads" className="navBtn" activeClassName="active">
       Downloads
     </Link>
-    <a href="/docs" className="navBtn">
+    <a href="https://guide.garli.co.in" className="navBtn">
       <img src={recipes} alt="Garlic Recipes" />
     </a>
   </nav>

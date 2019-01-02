@@ -23,7 +23,7 @@ export default () => (
             <a href="https://insight.garli.co.in/">Explorer</a>
           </li>
           <li>
-            <a href="/docs">Garlic Recipes</a>
+            <a href="https://guide.garli.co.in">Garlic Recipes</a>
           </li>
         </ul>
         <ul className="col">

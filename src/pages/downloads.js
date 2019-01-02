@@ -20,7 +20,8 @@ export default () => (
           Get Started section
         </Link>
         <> </>
-        or head directly to <a href="/docs">Garlic Recipes</a>.
+        or head directly to{' '}
+        <a href="https://guide.garli.co.in">Garlic Recipes</a>.
       </div>
       <div className="downloadsBtns">
         {Object.keys(buttons).map(button => {

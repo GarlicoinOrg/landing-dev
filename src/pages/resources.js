@@ -20,7 +20,7 @@ export default () => (
         Garlicoin. Click on the book to learn everything you need to know about
         this revolutionary new cryptocurrency.
       </p>
-      <a href="/docs">
+      <a href="https://guide.garli.co.in" className="docsLink">
         <span role="img" aria-label="finger pointing right" className="emoji">
           👉
         </span>

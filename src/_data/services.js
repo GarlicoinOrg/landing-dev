@@ -11,7 +11,8 @@ const services = {
     ButterPool: 'http://butterpool.com/'
   },
   'Misc.': {
-    'Garlic Recipes (Guides and Resources)': 'https://guide.garli.co.in/',
+    'Garlic Recipes (Guides and Resources)':
+      'https://https://guide.garli.co.in/',
     'Garlicoin Watchdog (Mining Pool Statistics)':
       'https://watchdog.garli.co.in/',
     'Garlicoin Insights (Explorer)': 'https://insight.garli.co.in/'

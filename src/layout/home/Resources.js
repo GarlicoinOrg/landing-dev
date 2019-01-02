@@ -21,7 +21,7 @@ export default () => (
         </p>
         <p>Click to read.</p>
       </a>
-      <a href="/docs" className="card">
+      <a href="https://guide.garli.co.in" className="card">
         <h4>User and Developer Resources</h4>
         <p>Garlic Recipes.</p>
       </a>

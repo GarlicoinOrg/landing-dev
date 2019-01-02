@@ -1,50 +1,55 @@
-#featureBoxContainer {
+.featureBoxContainer {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   margin-top: 16pt;
 }
+
 .featureBox {
   width: 240pt;
   margin: 8pt;
-  background-color: $bg;
   transition: 0.2s linear;
-  @for $i from 1 through 4 {
-    &:nth-of-type(#{$i}) {
-      .center {
-        background-color: rgb(112 + ($i * 20), 76, 104);
-      }
+}
+
+.featureBoxTitle {
+  $h: hue(color(accent, home-primary)) - hue(color(accent, home-secondary));
+  $s: saturation(color(accent, home-primary)) - saturation(color(accent, home-secondary));
+  $l: lightness(color(accent, home-primary)) - lightness(color(accent, home-secondary));
+  $a: alpha(color(accent, home-primary)) - alpha(color(accent, home-secondary));
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16pt;
+  line-height: 1;
+  color: $bg;
+  border-radius: 2px;
+  @for $i from 0 through 3 {
+    :nth-of-type(#{$i + 1}) & {
+      background-color: adjust_color(
+              color(accent, home-secondary),
+              $hue: $h * ($i / 3),
+              $saturation: $s * ($i / 3),
+              $lightness: $l * ($i / 3),
+              $alpha: $a * ($i / 3)
+      );
     }
   }
-  .center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 80pt;
-    margin-bottom: 0.5em;
-    padding: 4pt 0;
-    svg {
-      width: auto;
-      height: 24pt;
-      path {
-        fill: $bg;
-      }
+  svg {
+    width: auto;
+    height: 1em;
+    margin-right: 8pt;
+    path {
+      fill: $bg;
     }
   }
-  .desc {
-    padding: 1em;
-  }
-  h2 {
-    margin-bottom: 0.25em;
-    font-weight: bold;
-    font-size: $tL;
-  }
-  p {
-    color: $darker-mid-grey;
-  }
+}
+
+.featureBoxDescription {
+  padding: 1em;
+  color: color(grey, dark);
   a {
-    color: $accent-color-purple;
+    color: color(accent, home-primary);
     font-weight: bold;
   }
 }

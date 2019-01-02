@@ -1,51 +1,60 @@
 nav {
-  position: fixed;
+  position: sticky;
   top: 0;
-  left: 0;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  height: $nav-height;
   width: 100%;
+  height: $nav-height;
   padding: 0 16pt;
-  font-size: $tS;
+  font-size: $h6;
   color: $text-color;
   background-color: $bg;
   box-shadow: 0 0 4px rgba($text-color, 0.15);
   z-index: 100;
-  .navBtn {
-    display: flex;
-    align-items: center;
-    height: 100%;
-    padding: 0 16pt;
-    font-size: 1.3em;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.15s ease;
-    &:hover {
-      color: $bg;
-      background-color: $accent-color-purple;
-    }
-  }
-  .navLogo {
-    display: flex;
-    align-items: center;
-    margin-right: auto;
-    color: $accent-color-yellow;
-    .logo {
-      height: 20pt;
-      fill: $accent-color-yellow;
-      stroke: $text-color;
-      stroke-width: 2px;
-    }
-    span {
-      font-size: 2em;
-      margin-left: 4pt;
-      font-weight: bold;
-    }
-  }
   img {
     height: 24pt;
+  }
+}
+
+.navBtn {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 16pt;
+  font-size: 1.3em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  @each $href, $name in $routes {
+    &[href=#{$href}] {
+      color: color(accent, #{$name}-primary);
+      &:hover {
+        color: $bg;
+        background-color: color(accent, #{$name}-primary);
+      }
+      &.active {
+        box-shadow: 0 2px 0 0 color(accent, #{$name}-primary);
+      }
+    }
+  }
+}
+
+.navLogo {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+  color: $brand-color;
+  .logo {
+    height: 20pt;
+    fill: $brand-color;
+    stroke: $text-color;
+    stroke-width: 2px;
+  }
+  span {
+    font-size: 2em;
+    margin-left: 4pt;
+    font-weight: bold;
   }
 }
 
@@ -68,16 +77,16 @@ nav {
   align-items: center;
   height: 100%;
   padding: 8pt;
-  font-size: $tM;
-  border-left: 1px solid $darker-light-grey;
+  font-size: $h4;
+  border-left: 1px solid color(grey, lighter);
   &[href='/'] {
-    color: $accent-color-purple;
+    color: color(accent, home-primary);
   }
-  &[href='/onboarding'] {
-    color: $accent-color-yellow;
+  &[href='/resources'] {
+    color: color(accent, resources-secondary);
   }
   &[href='/downloads'] {
-    color: $accent-color-blue;
+    color: color(accent, downloads-primary);
   }
   .icon {
     height: 90%;

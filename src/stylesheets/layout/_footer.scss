@@ -1,4 +1,4 @@
-.footer {
+footer {
   position: sticky;
   bottom: 0;
   width: 100%;
@@ -9,7 +9,7 @@
   justify-content: space-around;
   align-items: center;
   padding: 24pt 8pt;
-  background: $home-gradient;
+  background: map_get($gradients, home);
   color: $bg;
 }
 .footerIcon {
@@ -34,7 +34,7 @@
     align-items: center;
     width: 100%;
     height: 100%;
-    font-size: $tL;
+    font-size: $h4;
   }
   input,
   button {
@@ -67,7 +67,7 @@
     margin-top: 8pt;
     font-size: 18px;
     font-weight: bold;
-    color: $accent-color-purple;
+    color: color(accent, home-primary);
     border-radius: 0 5px;
   }
 }
@@ -89,9 +89,9 @@
       color: $bg;
       cursor: pointer;
       &:first-of-type {
-        font-size: $tL;
+        font-size: $h4;
         font-weight: bold;
-        color: $darker-light-grey;
+        color: $bg;
         cursor: default;
       }
     }
@@ -100,11 +100,11 @@
 
 .copyright {
   padding: 8pt;
-  font-size: $tS;
+  font-size: $h6;
   color: $text-color;
   background: $bg;
   a {
-    color: $accent-color-purple;
+    color: color(accent, home-primary);
   }
   span {
     float: right;

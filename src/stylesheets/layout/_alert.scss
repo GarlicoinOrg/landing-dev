@@ -4,9 +4,9 @@
   width: 100%;
   padding: 8pt;
   text-align: center;
-  font-size: $tM;
+  font-size: $h4;
   font-weight: bold;
-  background: $accent-color-blue;
+  background: color(accent, downloads-primary);
   color: $bg;
   z-index: 97;
   a {
@@ -17,10 +17,10 @@
     font-size: 1em;
   }
   &.warning {
-    background: red;
+    background: color(accent, resources-primary);
   }
-  &.link {
-    background: $accent-color-yellow;
+  &.important {
+    background: red;
   }
 }
 

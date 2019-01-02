@@ -1,20 +1,10 @@
 .downloadsWrapper {
-  .section {
-    border: none;
-  }
-  h2 {
+  .subTitle {
+    font-size: $h4;
     margin-bottom: 16pt;
-  }
-  .downloadsBtns {
-    display: grid;
-    column-gap: 16pt;
-    grid-row-gap: 16pt;
-    grid-template-columns: repeat(auto-fit, minmax(240pt, 1fr));
-    max-width: 1000pt;
-    margin: 0 auto;
-    .icon {
-      height: 1.2em;
-      color: $bg;
+    a {
+      font-style: normal;
     }
   }
 }
+

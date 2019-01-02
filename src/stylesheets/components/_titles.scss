@@ -1,0 +1,13 @@
+.title,
+.subTitle {
+  max-width: 45rem;
+  margin: 0 auto 4pt;
+  text-align: center;
+}
+
+.subTitle {
+  font-size: $h4;
+  font-weight: 400;
+  font-style: italic;
+  color: color(grey, light);
+}

@@ -1,33 +1,38 @@
-import React from 'react'
+import React from 'react';
+
+import SectionTitle from 'src/components/SectionTitle';
 
 export default () => (
-  <div className="mainResources section">
-    <h1 className="title">Ready for Life</h1>
-    <h2 className="subTitle">
-      With a host of online resources, Garlicoin is ready for real-world implementation.
-    </h2>
+  <section className="mainResources">
+    <SectionTitle>Ready for Life</SectionTitle>
+    <div className="subTitle">
+      With a host of online resources, Garlicoin is ready for real-world
+      implementation.
+    </div>
     <div className="band">
       <a
         href="https://medium.com/@retosen.dev/important-information-regarding-fridays-allium-hard-fork-f48045379eff"
         target="_blank"
         rel="noopener noreferrer"
         className="card">
-        <h1>Latest Blog Post</h1>
-        <p>Important Information Regarding Friday’s Allium Hard Fork. (Feb 15)</p>
+        <h4>Latest Blog Post</h4>
+        <p>
+          Important Information Regarding Friday’s Allium Hard Fork. (Feb 15)
+        </p>
         <p>Click to read.</p>
       </a>
-      <a href="/resources" className="card">
-        <h1>User and Developer Resources</h1>
+      <a href="/docs" className="card">
+        <h4>User and Developer Resources</h4>
         <p>Garlic Recipes.</p>
       </a>
       <span className="card">
-        <h1>Shop</h1>
+        <h4>Shop</h4>
         <p>Coming soon.</p>
       </span>
       <span className="card">
-        <h1>Forum</h1>
+        <h4>Forum</h4>
         <p>Coming soon.</p>
       </span>
     </div>
-  </div>
-)
+  </section>
+);

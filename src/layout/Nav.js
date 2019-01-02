@@ -1,26 +1,26 @@
-import React from 'react'
-import Link from 'gatsby-link'
+import React from 'react';
+import Link from 'gatsby-link';
 
-import Logo from 'src/components/svg/Logo'
-import recipes from 'src/_assets/recipes.svg'
+import Logo from 'src/components/svg/Logo';
+import recipes from 'src/_assets/recipes.svg';
 
 export default () => (
   <nav>
     <Link to="/" className="navLogo">
-      <Logo name="logo" />
+      <Logo className="logo" />
       <span>Garlicoin</span>
     </Link>
-    <Link to="/" className="navBtn routeLink">
+    <Link to="/" className="navBtn" activeClassName="active">
       Home
     </Link>
-    <Link to="/onboarding" className="navBtn routeLink">
+    <Link to="/resources" className="navBtn" activeClassName="active">
       Get Started
     </Link>
-    <Link to="/downloads" className="navBtn routeLink">
+    <Link to="/downloads" className="navBtn" activeClassName="active">
       Downloads
     </Link>
-    <a href="/resources" className="navBtn">
+    <a href="/docs" className="navBtn">
       <img src={recipes} alt="Garlic Recipes" />
     </a>
   </nav>
-)
+);

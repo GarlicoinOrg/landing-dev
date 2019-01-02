@@ -10,12 +10,13 @@ export const templates = {
     link: 'https://garlicoinairdrop.com',
     type: 'link'
   }
-}
+};
 
 const alert = {
-  message: 'HARD FORK: PLEASE UPDATE YOUR GARLICOIN NODES TO THE LATEST BINARIES.',
+  message:
+    'HARD FORK: PLEASE UPDATE YOUR GARLICOIN NODES TO THE LATEST BINARIES.',
   link: '/downloads',
   type: 'warning long'
-}
+};
 
-export default alert
+export default alert;

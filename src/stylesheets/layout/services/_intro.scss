@@ -1,0 +1,24 @@
+.intro {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  [href="/docs"] {
+    display: flex;
+    align-items: center;
+    font-size: 4em;
+    &:hover {
+      .emoji {
+        animation: point-right 3s ease-in-out infinite;
+      }
+    }
+  }
+  p {
+    width: 520pt;
+    max-width: calc(100% - 16pt);
+    font-size: $h4;
+  }
+  img {
+    width: 80pt;
+    height: 80pt;
+  }
+}

@@ -23,6 +23,6 @@ module.exports = {
     },
     `gatsby-plugin-offline`
   ]
-}
+};
 
 // pathPrefix: '/garlicoin-web-prod'

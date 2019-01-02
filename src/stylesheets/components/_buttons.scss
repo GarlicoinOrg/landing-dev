@@ -7,24 +7,28 @@ button {
 
 .downloadBtn {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 8pt;
-  width: 100%;
-  background: $download-gradient;
+  line-height: 1.125;
+  text-align: center;
+  background: map_get($gradients, downloads);
   background-size: 200% 200%;
-  cursor: pointer;
+  border-radius: 2px;
   transition: all 0.15s ease-in-out;
-  svg {
-    fill: $bg;
+  .icon {
+    width: auto;
+    height: 20%;
+    margin-bottom: 4pt;
+    color: $bg;
   }
   span {
     color: $bg;
-    font-size: $tL;
-    margin: 0 0 0 0.5em;
+    font-size: $h3;
   }
   &:hover {
-    box-shadow: inset 0 0 2px 3px $accent-color-blue;
+    box-shadow: inset 0 0 2px 3px color(accent, downloads-primary);
     animation: animate-gradient 2s infinite;
   }
 }

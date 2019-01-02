@@ -1,6 +1,7 @@
 const services = {
   Wallets: {
-    'Android Wallet': 'https://play.google.com/store/apps/details?id=in.co.garli.garlicwallet',
+    'Android Wallet':
+      'https://play.google.com/store/apps/details?id=in.co.garli.garlicwallet',
     Garlium: 'https://github.com/garlicoin-project/garlium/releases/tag/v2.0.0'
   },
   Pools: {
@@ -11,9 +12,10 @@ const services = {
   },
   'Misc.': {
     'Garlic Recipes (Guides and Resources)': 'https://guide.garli.co.in/',
-    'Garlicoin Watchdog (Mining Pool Statistics)': 'https://watchdog.garli.co.in/',
+    'Garlicoin Watchdog (Mining Pool Statistics)':
+      'https://watchdog.garli.co.in/',
     'Garlicoin Insights (Explorer)': 'https://insight.garli.co.in/'
   }
-}
+};
 
-export default services
+export default services;

@@ -13,14 +13,6 @@
   }
 }
 
-@media screen and (max-width: 960px) {
-  .downloadsWrapper {
-    .section {
-      padding: 24pt 16pt;
-    }
-  }
-}
-
 @media screen and (max-width: 885px) {
   .mainFooter {
     flex-direction: column;
@@ -28,9 +20,6 @@
     .emailSignup {
       margin-bottom: 16pt;
     }
-  }
-  .container {
-    padding: 16pt 8pt;
   }
   .copyright {
     text-align: center;
@@ -45,7 +34,12 @@
   nav {
     .navBtn {
       padding: 0 8pt;
-      font-size: $tS;
+      font-size: $h5;
+    }
+  }
+  .mainHeader {
+    .logo {
+      display: none;
     }
   }
 }
@@ -60,13 +54,19 @@
   .mobileNav {
     display: flex;
   }
-  .mainBanner {
+  .mainHeader {
     height: calc(100vh - #{$nav-height});
     h1 {
-      font-size: 18pt;
+      font-size: $h2;
+    }
+    h3 {
+      font-size: $h4;
+    }
+    a {
+      font-size: $h5;
     }
   }
-  .section {
+  section {
     padding: 24pt 16pt;
   }
 }
@@ -78,15 +78,15 @@
     }
   }
   .alert {
-    font-size: $tS;
+    font-size: $h6;
   }
-  .mainBanner {
+  .mainHeader {
     .moreInfo {
       bottom: 16pt;
     }
   }
-  .onboardingWrapper {
-    .container {
+  .resourcesWrapper {
+    .servicesLinks {
       a,
       .viewAll {
         width: 100%;

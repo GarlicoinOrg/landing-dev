@@ -1,0 +1,9 @@
+.downloadsBtns {
+  display: grid;
+  column-gap: 16pt;
+  grid-row-gap: 16pt;
+  grid-auto-rows: 160pt;
+  grid-template-columns: repeat(auto-fit, minmax(160pt, 1fr));
+  max-width: 572pt;
+  margin: 0 auto;
+}

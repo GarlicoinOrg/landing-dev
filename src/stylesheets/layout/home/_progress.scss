@@ -1,0 +1,34 @@
+.progressLinks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 16pt 24pt;
+  iframe,
+  a {
+    flex: 1;
+    min-width: 160pt;
+    max-width: 400pt;
+    max-height: 240pt;
+    margin: 0 16pt;
+    transition: none;
+    border-radius: 2px;
+  }
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80pt;
+    color: $bg;
+    box-shadow: 4px 4px 8px rgba($text-color, 0.2);
+    .icon {
+      width: 40pt;
+      height: 40pt;
+    }
+  }
+  .discordLink {
+    background: #738ad7;
+  }
+  .redditLink {
+    background: #ff5700;
+  }
+}

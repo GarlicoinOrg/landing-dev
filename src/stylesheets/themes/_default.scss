@@ -1,24 +1,8 @@
-.home {
-  @include theme($accent-color-purple, $accent-color-pink, $home-gradient, 2);
-}
-
-.onboarding {
-  @include theme($accent-color-yellow, $accent-color-orange, $resource-gradient, 3);
-}
-
-.downloads {
-  @include theme($accent-color-blue, $accent-color-lavender, $download-gradient, 4);
-}
-
-.routeLink[href='/onboarding'] {
-  @include route-link($accent-color-yellow);
-}
-.routeLink[href='/downloads'] {
-  @include route-link($accent-color-blue);
-}
-.routeLink[href='/'] {
-  @include route-link($accent-color-purple);
-}
-[href='/resources'] {
-  color: $accent-color-orange;
+@each $href, $name in $routes {
+  .#{$name} {
+    @include theme(color(accent, #{$name}-secondary), map_get($gradients, $name));
+  }
+  .routeLink[href^=#{$href}] {
+    @include route-link(color(accent, #{$name}-primary));
+  }
 }

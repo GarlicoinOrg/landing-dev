@@ -1,15 +1,15 @@
-import React from 'react'
-import Helmet from 'react-helmet'
+import React from 'react';
+import Helmet from 'react-helmet';
 
-import classNames from 'classnames'
-import Nav from 'src/layout/Nav'
-import MobileNav from 'src/layout/MobileNav'
-import Alert from 'src/layout/Alert'
-import Footer from 'src/layout/Footer'
+import classNames from 'classnames';
+import Nav from 'src/layout/Nav';
+import MobileNav from 'src/layout/MobileNav';
+import Alert from 'src/layout/Alert';
+import Footer from 'src/layout/Footer';
 
-import logo from 'src/_assets/logo.png'
+import logo from 'src/_assets/logo.png';
 
-import './stylesheets/main.scss'
+import './stylesheets/main.scss';
 
 export default ({ wrapper, page, children }) => (
   <>
@@ -27,12 +27,12 @@ export default ({ wrapper, page, children }) => (
       ]}
       link={[{ href: logo, rel: 'icon', type: 'image/x-icon' }]}
     />
-    <div className={classNames('app', { [page]: !!page })}>
+    <main role="main" className={classNames('app', { [page]: page })}>
       <Nav />
       <Alert />
       <div className={wrapper}>{children}</div>
       <Footer />
       <MobileNav />
-    </div>
+    </main>
   </>
-)
+);

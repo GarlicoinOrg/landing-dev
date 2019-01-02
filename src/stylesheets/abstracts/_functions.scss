@@ -1,5 +1,5 @@
 // -----------------------------------------------------------------------------
-// This file contains all application-wide Sass functions.
+// This file contains all application-wide SCSS functions.
 // -----------------------------------------------------------------------------
 
 /// Native `url(..)` function wrapper
@@ -27,4 +27,51 @@
 /// @require $base-url
 @function font($path, $base: $base-url) {
   @return asset($base, 'fonts/', $path);
+}
+
+@function palette(
+  $color,
+  $darkest: 15%,
+  $darker: 10%,
+  $dark: 5%,
+  $light: 5%,
+  $lighter: 10%,
+  $lightest: 15%
+) {
+  @return (
+    darkest: darken($color, $darkest),
+    darker: darken($color, $darker),
+    dark: darken($color, $dark),
+    base: $color,
+    light: lighten($color, $light),
+    lighter: lighten($color, $lighter),
+    lightest: lighten($color, $lightest)
+  );
+}
+
+@function color($color, $tone) {
+  @if map-has-key($palettes, $color) {
+    $color: map-get($palettes, $color);
+
+    @if map-has-key($color, $tone) {
+      $tone: map-get($color, $tone);
+      @return $tone;
+    }
+
+    @warn "unknown tone `#{$tone}` in color";
+    @return null;
+  }
+
+  @warn "unknown color `#{$color}` in palette";
+  @return null;
+}
+
+@function page-gradient($name) {
+  @return (
+      linear-gradient(
+              135deg,
+              color(accent, #{$name}-primary),
+              color(accent, #{$name}-secondary)
+      )
+  )
 }

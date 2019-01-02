@@ -1,10 +1,10 @@
-import React from 'react'
-import Link from 'gatsby-link'
+import React from 'react';
+import Link from 'gatsby-link';
 
-import Logo from 'src/components/svg/Logo'
+import Logo from 'src/components/svg/Logo';
 
 export default () => (
-  <div className="footer">
+  <footer>
     <div className="mainFooter">
       <div className="emailSignup">
         <div className="emailOverlay">COMING SOON.</div>
@@ -14,7 +14,7 @@ export default () => (
         </button>
       </div>
       <Link to="/">
-        <Logo name="footerIcon" />
+        <Logo className="footerIcon" />
       </Link>
       <div className="footerCols">
         <ul className="col">
@@ -23,18 +23,24 @@ export default () => (
             <a href="https://insight.garli.co.in/">Explorer</a>
           </li>
           <li>
-            <a href="/resources">Garlic Recipes</a>
+            <a href="/docs">Garlic Recipes</a>
           </li>
         </ul>
         <ul className="col">
           <li>Community</li>
           <li>
-            <a href="https://garlicoin.reddit.com" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://garlicoin.reddit.com"
+              target="_blank"
+              rel="noopener noreferrer">
               Reddit
             </a>
           </li>
           <li>
-            <a href="https://discord.gg/nZWHe33" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://discord.gg/nZWHe33"
+              target="_blank"
+              rel="noopener noreferrer">
               Discord Server
             </a>
           </li>
@@ -42,7 +48,7 @@ export default () => (
         <ul className="col">
           <li>Help</li>
           <li>
-            <Link to="/onboarding">Get Started</Link>
+            <Link to="/resources">Get Started</Link>
           </li>
           <li>
             <a href="mailto:garlicoindevs@gmail.com">garlicoindevs@gmail.com</a>
@@ -58,5 +64,5 @@ export default () => (
         <Link to="#">DMCA Policy </Link>| <Link to="#">Disclaimer</Link>
       </span>
     </div>
-  </div>
-)
+  </footer>
+);

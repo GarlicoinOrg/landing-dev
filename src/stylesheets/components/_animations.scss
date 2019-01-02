@@ -9,3 +9,15 @@
     background-position: 50% 100%;
   }
 }
+
+@keyframes point-right {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-8pt);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

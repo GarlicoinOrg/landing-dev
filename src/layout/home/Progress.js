@@ -1,23 +1,33 @@
-import React from 'react'
+import React from 'react';
 
-import { faDiscord, faReddit } from '@fortawesome/free-brands-svg-icons'
-import Icon from 'src/components/Icon'
+import { faDiscord, faReddit } from '@fortawesome/free-brands-svg-icons';
+import Icon from 'src/components/Icon';
+import SectionTitle from 'src/components/SectionTitle';
+
+// const Discord = React.lazy(() => import('src/components/DiscordWidget'))
+
+const DiscordPlaceholder = () => (
+  <a
+    href="https://discord.gg/nZWHe33"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="discordLink">
+    <Icon icon={faDiscord} />
+  </a>
+);
 
 export default () => (
-  <div className="progress section">
-    <h1 className="title">Where We're At</h1>
-    <h2 className="subTitle">
-      We're currently hard at work developing this website, the exchange, and GarliCoin itself!
-      Check on our discord and reddit for more updates.
-    </h2>
+  <section className="progress">
+    <SectionTitle>Where We're At</SectionTitle>
+    <div className="subTitle">
+      We're currently hard at work developing this website, the exchange, and
+      GarliCoin itself! Check on our discord and reddit for more updates.
+    </div>
     <div className="progressLinks">
-      <a
-        href="https://discord.gg/nZWHe33"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="discordLink">
-        <Icon icon={faDiscord} />
-      </a>
+      {/*<Suspense fallback={DiscordPlaceholder}>*/}
+      {/*<Discord />*/}
+      {/*</Suspense>*/}
+      <DiscordPlaceholder />
       <a
         href="https://garlicoin.reddit.com"
         target="_blank"
@@ -26,5 +36,5 @@ export default () => (
         <Icon icon={faReddit} />
       </a>
     </div>
-  </div>
-)
+  </section>
+);

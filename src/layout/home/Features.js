@@ -1,13 +1,12 @@
 import React from 'react';
 
-import {
-  faLock,
-  faSpaceShuttle,
-  faCode,
-  faGem
-} from '@fortawesome/free-solid-svg-icons';
 import SectionTitle from 'src/components/SectionTitle';
 import FeatureBox from 'src/components/home/FeatureBox';
+
+import Shield from 'src/_assets/faShield.svg';
+import Shuttle from 'src/_assets/faSpaceShuttle.svg';
+import Code from 'src/_assets/faCode.svg';
+import Polygon from 'src/_assets/faPolygon.svg';
 
 export default () => (
   <section className="features">
@@ -19,7 +18,7 @@ export default () => (
       in countless other cryptocurrencies.
     </div>
     <div className="featureBoxContainer">
-      <FeatureBox icon={faLock} title="Secure">
+      <FeatureBox icon={<Shield />} title="Secure">
         Garlicoin is like the deadbolt for door locks; it's secure and protects
         you from crypto-vampires. Blockchain tech makes it nearly impossible to
         run a brute-force attack and with our{' '}
@@ -27,17 +26,17 @@ export default () => (
         encryption, you can be moderately safe that your garlic bread isn't
         going anywhere.
       </FeatureBox>
-      <FeatureBox icon={faSpaceShuttle} title="Blazing Fast">
+      <FeatureBox icon={<Shuttle />} title="Blazing Fast">
         Garlicoin trading speed is <span className="strike">near instant</span>{' '}
         pretty fast. Never be inconvienienced again with slow transaction speeds
         and high rates!
       </FeatureBox>
-      <FeatureBox icon={faCode} title="Open Source">
+      <FeatureBox icon={<Code />} title="Open Source">
         Wanna take a closer look at Garlicoin? Do it! Just like the other "cool"
         cryptocurrencies, you'll be sure to find just what makes us tick on our{' '}
         <a href="https://github.com/GarlicoinOrg">GitHub.</a>
       </FeatureBox>
-      <FeatureBox icon={faGem} title="Decentralized">
+      <FeatureBox icon={<Polygon />} title="Decentralized">
         If you're like us, you hate fiat currencies; slow, paper, and prone to
         inflation. Decentralized (as in Garlicoin) currencies like Bitcoin and
         Ethereum have a limited amount on market. 69 million Garlicoin will only

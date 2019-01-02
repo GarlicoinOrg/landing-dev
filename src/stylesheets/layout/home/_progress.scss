@@ -20,7 +20,7 @@
     height: 80pt;
     color: $bg;
     box-shadow: 4px 4px 8px rgba($text-color, 0.2);
-    .icon {
+    [data-icon] {
       width: 40pt;
       height: 40pt;
     }

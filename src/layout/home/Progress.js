@@ -1,8 +1,9 @@
 import React from 'react';
 
-import { faDiscord, faReddit } from '@fortawesome/free-brands-svg-icons';
-import Icon from 'src/components/Icon';
 import SectionTitle from 'src/components/SectionTitle';
+
+import Discord from 'src/_assets/faDiscord.svg';
+import Reddit from 'src/_assets/faReddit.svg';
 
 // const Discord = React.lazy(() => import('src/components/DiscordWidget'))
 
@@ -12,7 +13,7 @@ const DiscordPlaceholder = () => (
     target="_blank"
     rel="noopener noreferrer"
     className="discordLink">
-    <Icon icon={faDiscord} />
+    <Discord />
   </a>
 );
 
@@ -33,7 +34,7 @@ export default () => (
         target="_blank"
         rel="noopener noreferrer"
         className="redditLink">
-        <Icon icon={faReddit} />
+        <Reddit />
       </a>
     </div>
   </section>

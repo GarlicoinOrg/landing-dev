@@ -1,23 +1,20 @@
 import React from 'react';
+import { Link } from 'gatsby';
 
-import Link from 'gatsby-link';
-import {
-  faHome,
-  faBullhorn,
-  faDownload
-} from '@fortawesome/free-solid-svg-icons';
-import Icon from 'src/components/Icon';
+import Home from 'src/_assets/faHome.svg';
+import Book from 'src/_assets/faBook.svg';
+import Download from 'src/_assets/faDownload.svg';
 
 export default () => (
   <div className="mobileNav">
     <Link to="/" className="navBtnMobile" activeClassName="active">
-      <Icon icon={faHome} />
+      <Home />
     </Link>
     <Link to="/resources" className="navBtnMobile" activeClassName="active">
-      <Icon icon={faBullhorn} />
+      <Book />
     </Link>
     <Link to="/downloads" className="navBtnMobile" activeClassName="active">
-      <Icon icon={faDownload} />
+      <Download />
     </Link>
   </div>
 );

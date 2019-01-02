@@ -5,7 +5,7 @@ import { Link } from 'gatsby';
 import App from 'src/App';
 import ServiceSection from 'src/components/ServiceSection';
 
-import recipes from 'src/_assets/recipes.svg';
+import Recipes from 'src/_assets/recipes.svg';
 import services from 'src/_data/services';
 
 export default () => (
@@ -24,7 +24,7 @@ export default () => (
         <span role="img" aria-label="finger pointing right" className="emoji">
           👉
         </span>
-        <img src={recipes} alt="Garlic Recipes" />
+        <Recipes />
       </a>
       <p>
         If you'd rather jump straight into the action, scroll down to our{' '}

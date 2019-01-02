@@ -1,10 +1,12 @@
 import React from 'react';
 
-import Icon from 'src/components/Icon';
+export default ({ data }) => {
+  const { link, icon, desc } = data;
 
-export default ({ data }) => (
-  <a href={data.link} className="downloadBtn">
-    <Icon icon={data.icon} />
-    <span>{data.desc}</span>
-  </a>
-);
+  return (
+    <a href={link} className="downloadBtn">
+      {icon}
+      <span>{desc}</span>
+    </a>
+  );
+};

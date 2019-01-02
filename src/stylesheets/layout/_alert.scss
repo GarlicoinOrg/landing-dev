@@ -38,7 +38,7 @@
   background: transparent;
   cursor: pointer;
   z-index: 98;
-  .icon {
+  [data-icon] {
     width: 12pt;
     height: 12pt;
     pointer-events: none;

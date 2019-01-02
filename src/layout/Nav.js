@@ -1,8 +1,8 @@
 import React from 'react';
-import Link from 'gatsby-link';
+import { Link } from 'gatsby';
 
 import Logo from 'src/components/svg/Logo';
-import recipes from 'src/_assets/recipes.svg';
+import Recipes from 'src/_assets/recipes.svg';
 
 export default () => (
   <nav>
@@ -20,7 +20,7 @@ export default () => (
       Downloads
     </Link>
     <a href="https://guide.garli.co.in" className="navBtn">
-      <img src={recipes} alt="Garlic Recipes" />
+      <Recipes />
     </a>
   </nav>
 );

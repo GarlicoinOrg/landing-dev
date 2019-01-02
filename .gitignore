@@ -1,9 +1,10 @@
 node_modules
-.cache/
-public/
+.cache
+public
 
 .idea/
 .vscode/
 .DS_Store
 yarn-error.log
+*.lock
 *.log

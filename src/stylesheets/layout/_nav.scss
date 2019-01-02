@@ -79,14 +79,14 @@ nav {
   padding: 8pt;
   font-size: $h4;
   border-left: 1px solid color(grey, lighter);
-  &[href='/'] {
-    color: color(accent, home-primary);
-  }
-  &[href='/resources'] {
-    color: color(accent, resources-secondary);
-  }
-  &[href='/downloads'] {
-    color: color(accent, downloads-primary);
+  @each $href, $name in $routes {
+    &[href=#{$href}] {
+      color: color(accent, #{$name}-primary);
+      &.active {
+        color: $bg;
+        background: color(accent, #{$name}-primary);
+      }
+    }
   }
   .icon {
     height: 90%;

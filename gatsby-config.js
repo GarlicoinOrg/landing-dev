@@ -30,7 +30,19 @@ module.exports = {
       }
     },
     `gatsby-plugin-offline`,
-    `gatsby-plugin-zopfli`
+    `gatsby-plugin-zopfli`,
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: 'UA-131680351-1',
+        // Puts tracking script in the head instead of the body
+        head: false,
+        anonymize: true,
+        respectDNT: true,
+        // Avoids sending pageview hits from custom paths
+        exclude: []
+      }
+    }
   ]
 };
 

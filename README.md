@@ -3,17 +3,15 @@
 Garlicoin's landing page made with GatsbyJS.
 
 ### Getting started
-To contribute, please fork and make pull requests.
-1. `yarn`.
-2. `yarn develop`, the default port is 8000.
+To contribute, please fork and make a pull requests.
+1. `yarn` or `npm i`.
+2. `gatsby develop`.
+3. Open `localhost:8000` in your browser.
 
 ### Styling
-REMINDER: The website is styled with SCSS but you can just use regular CSS if you are not familiar with it. 
+The website is styled with SCSS but you can just use regular CSS if you are not familiar with it. 
 
-Please do not use IDs for styling, IDs are bad.
+[SASS reference for folder structure](https://sass-guidelin.es/#the-7-1-pattern)
 
-### Automation
-Running `yarn update-release` will change the download links on the downloads page to the latest release of garlicoin. Watch the console for any errors.
-
-### Deployment
-`yarn deploy`
+### Automation Scripts
+Running `yarn update-release` will update the links on the downloads page to the latest release of Garlicoin. Watch the console for any errors.

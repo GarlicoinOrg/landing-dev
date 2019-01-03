@@ -3,11 +3,12 @@ const path = require('path');
 const puppeteer = require('puppeteer');
 
 const releasesURL = 'https://github.com/GarlicoinOrg/Garlicoin/releases';
-const releaseSelector = '.repository-content > div.position-relative.border-top.clearfix > div:nth-child(1) > div > div.d-none.d-md-block.flex-wrap.flex-items-center.col-12.col-md-3.col-lg-2.px-md-3.pb-1.pb-md-4.pt-md-4.float-left.text-md-right.v-align-top > ul > li:nth-child(1) > a > span';
+const releaseSelector =
+  '.repository-content > div.position-relative.border-top.clearfix > div:nth-child(1) > div > div.d-none.d-md-block.flex-wrap.flex-items-center.col-12.col-md-3.col-lg-2.px-md-3.pb-1.pb-md-4.pt-md-4.float-left.text-md-right.v-align-top > ul > li:nth-child(1) > a > span';
 const relativePath = '../src/_data/downloads.js';
 const filePath = path.join(__dirname, relativePath);
 
-const fetch = async() => {
+const fetch = async () => {
   await console.log('Fetching newest release');
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
@@ -24,24 +25,19 @@ const fetch = async() => {
         if (err) {
           return console.log(err);
         }
-        const result = data.replace(/const release = '.*?';/, lineReplacement);
-        if (result.includes(lineReplacement)) {
-          console.log('Write successful');
-        }
-        else {
-          console.log('Write failed');
-        }
 
+        const result = data.replace(/const release = '.*?';/, lineReplacement);
         fs.writeFile(filePath, result, 'utf8', err => {
           if (err) return console.log(err);
         });
+
+        console.log('Write successful');
       });
+    } catch (err) {
+      console.log('Write failed.');
+      throw new Error(err);
     }
-    catch (e) {
-      console.log(e);
-    }
-  }
-  else {
+  } else {
     console.log('File path does not exist');
   }
 

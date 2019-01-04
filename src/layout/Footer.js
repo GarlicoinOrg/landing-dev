@@ -7,14 +7,21 @@ export default () => (
   <footer>
     <div className="mainFooter">
       <div className="emailSignup">
-        <div className="emailOverlay">COMING SOON.</div>
-        <input type="email" name="EMAIL" placeholder="Email Address" />
-        <button type="submit" className="btn-blue" name="subscribe">
+        <div className="emailOverlay">
+          <span>
+            Newsletter subscription <br /> not available.
+          </span>
+        </div>
+        <div className="emailPlaceholder">Email Address</div>
+        <button className="btn-blue" name="subscribe">
           Sign Up
         </button>
       </div>
-      <Link to="/">
-        <Logo className="footerIcon" />
+      <Link
+        to="/"
+        className="footerIcon"
+        aria-label="Garlicoin logo: link to home page">
+        <Logo />
       </Link>
       <div className="footerCols">
         <ul className="col">
@@ -58,10 +65,12 @@ export default () => (
       </div>
     </div>
     <div className="copyright">
-      © 2018 by Garlicoin Org. All rights reserved
-      <span>
-        <Link to="#">Terms of Use </Link>| <Link to="#">Privacy Policy </Link>|{' '}
-        <Link to="#">DMCA Policy </Link>| <Link to="#">Disclaimer</Link>
+      <span>© 2018 by Garlicoin Org. All rights reserved</span>
+      <span className="copyrightLinks">
+        <Link to="#">Terms of Use</Link>
+        <Link to="#">Privacy Policy </Link>
+        <Link to="#">DMCA Policy </Link>
+        <Link to="#">Disclaimer</Link>
       </span>
     </div>
   </footer>

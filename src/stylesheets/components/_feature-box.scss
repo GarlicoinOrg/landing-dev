@@ -22,7 +22,7 @@
   align-items: center;
   padding: 16pt;
   line-height: 1;
-  color: $bg;
+  color: $text-color;
   border-radius: 2px;
   @for $i from 0 through 3 {
     :nth-of-type(#{$i + 1}) & {

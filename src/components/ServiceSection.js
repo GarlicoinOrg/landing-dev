@@ -1,18 +1,20 @@
 import React from 'react';
 
-export default ({ title, values }) => {
-  let content = 'Coming soon.';
-  if (Object.values(values).length > 0) {
-    content = Object.keys(values).map(val => (
-      <a
-        href={values[val]}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="servicesLink">
-        {val}
-      </a>
-    ));
-  }
+import services from 'src/_data/services';
+
+const Section = ({ title, links }) => {
+  const content = links
+    ? Object.entries(links).map(([label, link]) => (
+        <a
+          key={label}
+          href={link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="servicesLink">
+          {label}
+        </a>
+      ))
+    : 'Coming soon.';
 
   return (
     <>
@@ -21,3 +23,8 @@ export default ({ title, values }) => {
     </>
   );
 };
+
+export default () =>
+  Object.entries(services).map(([title, links]) => (
+    <Section key={title} {...{ title, links }} />
+  ));

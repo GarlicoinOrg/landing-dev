@@ -9,6 +9,7 @@ import Reddit from 'src/_assets/faReddit.svg';
 
 const DiscordPlaceholder = () => (
   <a
+    aria-label="Link to the Garlicoin Discord server"
     href="https://discord.gg/nZWHe33"
     target="_blank"
     rel="noopener noreferrer"
@@ -22,7 +23,7 @@ export default () => (
     <SectionTitle>Where We're At</SectionTitle>
     <div className="subTitle">
       We're currently hard at work developing this website, the exchange, and
-      GarliCoin itself! Check on our discord and reddit for more updates.
+      Garlicoin itself! Check on our discord and reddit for more updates.
     </div>
     <div className="progressLinks">
       {/*<Suspense fallback={DiscordPlaceholder}>*/}
@@ -30,6 +31,7 @@ export default () => (
       {/*</Suspense>*/}
       <DiscordPlaceholder />
       <a
+        aria-label="Link to the Garlicoin Subreddit"
         href="https://garlicoin.reddit.com"
         target="_blank"
         rel="noopener noreferrer"

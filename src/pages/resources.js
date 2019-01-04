@@ -6,7 +6,6 @@ import App from 'src/App';
 import ServiceSection from 'src/components/ServiceSection';
 
 import Recipes from 'src/_assets/recipes.svg';
-import services from 'src/_data/services';
 
 export default () => (
   <App wrapper="resourcesWrapper" page="resources">
@@ -47,13 +46,7 @@ export default () => (
         Note: While we trust these services, we are not necessarily affiliated
         with them.
       </div>
-      {Object.keys(services).map(section => (
-        <ServiceSection
-          key={section}
-          title={section}
-          values={services[section]}
-        />
-      ))}
+      <ServiceSection />
     </section>
   </App>
 );

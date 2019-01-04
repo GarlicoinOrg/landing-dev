@@ -1,20 +1,28 @@
 nav {
   position: sticky;
-  top: 0;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
   width: 100%;
   height: $nav-height;
-  padding: 0 16pt;
-  font-size: $h6;
-  color: $text-color;
-  background-color: $bg;
-  box-shadow: 0 0 4px rgba($text-color, 0.15);
+  background: $bg;
   z-index: 100;
-  svg {
-    width: auto;
-    height: 75%;
+  &.mainNav {
+    top: 0;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 16pt;
+    font-size: $h6;
+    color: $text-color;
+    box-shadow: 0 0 4px rgba($text-color, 0.15);
+    svg {
+      width: auto;
+      height: 75%;
+    }
+  }
+  &.mobileNav {
+    display: none;
+    bottom: -1px;
+    left: 0;
+    box-shadow: 0 0 8px rgba($text-color, 0.1);
   }
 }
 
@@ -23,7 +31,7 @@ nav {
   align-items: center;
   height: 100%;
   padding: 0 16pt;
-  font-size: 1.3em;
+  font-size: $h4;
   font-weight: bold;
   cursor: pointer;
   transition: all 0.15s ease;
@@ -57,18 +65,6 @@ nav {
     margin-left: 4pt;
     font-weight: bold;
   }
-}
-
-.mobileNav {
-  position: sticky;
-  bottom: -1px;
-  left: 0;
-  display: none;
-  width: 100%;
-  height: $nav-height;
-  background: $bg;
-  box-shadow: 0 0 8px rgba($text-color, 0.1);
-  z-index: 10;
 }
 
 .navBtnMobile {

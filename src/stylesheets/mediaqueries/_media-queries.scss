@@ -15,17 +15,13 @@
 
 @media screen and (max-width: 885px) {
   .mainFooter {
-    flex-direction: column;
+    justify-content: center;
     padding: 16pt;
-    .emailSignup {
-      margin-bottom: 16pt;
+    .footerCols {
+      grid-area: center;
     }
-  }
-  .copyright {
-    text-align: center;
-    span {
-      display: block;
-      float: none;
+    .emailSignup {
+      display: none;
     }
   }
 }
@@ -37,25 +33,25 @@
       font-size: $h5;
     }
   }
-  .mainHeader {
-    .logo {
-      display: none;
-    }
+  .copyright {
+    flex-flow: column nowrap;
+    align-items: center;
   }
 }
 
 @media screen and (max-width: 600px) {
   nav {
-    display: none;
+    &.mainNav {
+      display: none;
+    }
+    &.mobileNav {
+      display: flex;
+    }
   }
   .alert {
     top: 0;
   }
-  .mobileNav {
-    display: flex;
-  }
   .mainHeader {
-    height: calc(100vh - #{$nav-height});
     h1 {
       font-size: $h2;
     }
@@ -72,41 +68,26 @@
 }
 
 @media screen and (max-width: 500px) {
-  nav {
-    .navLogoContainer {
-      display: none;
-    }
-  }
   .alert {
     font-size: $h6;
   }
-  .mainHeader {
-    .moreInfo {
-      bottom: 16pt;
-    }
-  }
   .resourcesWrapper {
-    .servicesLinks {
-      a,
-      .viewAll {
-        width: 100%;
-        text-align: center;
-      }
-    }
-  }
-  .features {
-    .featureBox {
-      width: calc(100vw - 16pt);
-    }
-  }
-  .mainFooter {
-    .footerCols {
-      flex-flow: column nowrap;
+    .servicesLink {
+      width: 100%;
       text-align: center;
-      .col {
-        width: auto;
-        margin: 0 auto 4pt;
-        padding-bottom: 4pt;
+    }
+  }
+  .featureBox {
+    width: calc(100vw - 16pt);
+  }
+  .footerCols {
+    flex-flow: column nowrap;
+    align-items: center;
+    .col {
+      text-align: center;
+      margin-bottom: 4pt;
+      padding-bottom: 4pt;
+      @include all-but(3) {
         border-bottom: 1px solid $bg;
       }
     }

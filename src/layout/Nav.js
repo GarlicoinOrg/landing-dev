@@ -5,18 +5,33 @@ import Logo from 'src/components/svg/Logo';
 import Recipes from 'src/_assets/recipes.svg';
 
 export default () => (
-  <nav>
-    <Link to="/" className="navLogo">
+  <nav className="mainNav">
+    <Link
+      to="/"
+      className="navLogo"
+      aria-label="Garlicoin logo: link to home page">
       <Logo className="logo" />
       <span>Garlicoin</span>
     </Link>
-    <Link to="/" className="navBtn" activeClassName="active">
+    <Link
+      to="/"
+      className="navBtn"
+      activeClassName="active"
+      aria-label="Link to home page">
       Home
     </Link>
-    <Link to="/resources" className="navBtn" activeClassName="active">
+    <Link
+      to="/resources"
+      className="navBtn"
+      activeClassName="active"
+      aria-label="Link to resources page">
       Get Started
     </Link>
-    <Link to="/downloads" className="navBtn" activeClassName="active">
+    <Link
+      to="/downloads"
+      className="navBtn"
+      activeClassName="active"
+      aria-label="Link to downloads page">
       Downloads
     </Link>
     <a href="https://guide.garli.co.in" className="navBtn">

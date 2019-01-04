@@ -1,4 +1,4 @@
-const services = {
+export default {
   Wallets: {
     'Android Wallet':
       'https://play.google.com/store/apps/details?id=in.co.garli.garlicwallet',
@@ -18,5 +18,3 @@ const services = {
     'Garlicoin Insights (Explorer)': 'https://insight.garli.co.in/'
   }
 };
-
-export default services;

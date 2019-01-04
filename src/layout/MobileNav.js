@@ -6,15 +6,27 @@ import Book from 'src/_assets/faBook.svg';
 import Download from 'src/_assets/faDownload.svg';
 
 export default () => (
-  <div className="mobileNav">
-    <Link to="/" className="navBtnMobile" activeClassName="active">
+  <nav className="mobileNav">
+    <Link
+      to="/"
+      className="navBtnMobile"
+      activeClassName="active"
+      aria-label="Link to home page">
       <Home />
     </Link>
-    <Link to="/resources" className="navBtnMobile" activeClassName="active">
+    <Link
+      to="/resources"
+      className="navBtnMobile"
+      activeClassName="active"
+      aria-label="Link to resources page">
       <Book />
     </Link>
-    <Link to="/downloads" className="navBtnMobile" activeClassName="active">
+    <Link
+      to="/downloads"
+      className="navBtnMobile"
+      activeClassName="active"
+      aria-label="Link to downloads page">
       <Download />
     </Link>
-  </div>
+  </nav>
 );

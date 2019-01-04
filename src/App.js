@@ -25,7 +25,25 @@ export default ({ wrapper, page, children }) => (
         },
         { name: 'viewport', content: 'width=device-width, initial-scale=1.0' }
       ]}>
+      {/*Open Graph / Facebook*/}
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://garlicoin.io/" />
+      <meta property="og:title" content="Garlicoin" />
+      <meta
+        property="og:description"
+        content="The new, friendly, decentralized cryptocurrency you've never heard of."
+      />
+
+      {/*Twitter*/}
+      <meta property="twitter:card" content="summary_large_image" />
+      <meta property="twitter:url" content="https://garlicoin.io/" />
+      <meta property="twitter:title" content="Garlicoin" />
+      <meta
+        property="twitter:description"
+        content="The new, friendly, decentralized cryptocurrency you've never heard of."
+      />
       <html lang="en" />
+      <noscript>Please enable Javascript.</noscript>
     </Helmet>
     <main role="main" className={classNames('app', { [page]: page })}>
       <Nav />

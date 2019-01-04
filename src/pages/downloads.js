@@ -5,7 +5,7 @@ import Helmet from 'react-helmet';
 import App from 'src/App';
 import DownloadBtn from 'src/components/downloads/DownloadBtn';
 
-import { buttons } from 'src/_data/downloads';
+import { buttons } from 'src/data/downloads';
 
 export default () => (
   <App wrapper="downloadsWrapper" page="downloads">

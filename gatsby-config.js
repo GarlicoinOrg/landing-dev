@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'garlicoin.io'
+    title: 'Garlicoin'
   },
   plugins: [
     `gatsby-plugin-root-import`,
@@ -11,7 +11,7 @@ module.exports = {
       resolve: 'gatsby-plugin-react-svg',
       options: {
         rule: {
-          include: /_assets/
+          include: /assets/
         }
       }
     },

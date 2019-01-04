@@ -27,11 +27,11 @@
   @for $i from 0 through 3 {
     :nth-of-type(#{$i + 1}) & {
       background-color: adjust_color(
-              color(accent, home-secondary),
-              $hue: $h * ($i / 3),
-              $saturation: $s * ($i / 3),
-              $lightness: $l * ($i / 3),
-              $alpha: $a * ($i / 3)
+          color(accent, home-secondary),
+          $hue: $h * ($i / 3),
+          $saturation: $s * ($i / 3),
+          $lightness: $l * ($i / 3),
+          $alpha: $a * ($i / 3)
       );
     }
   }
@@ -40,7 +40,7 @@
     height: 1em;
     margin-right: 8pt;
     path {
-      fill: $bg;
+      fill: $text-color;
     }
   }
 }

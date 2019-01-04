@@ -1,6 +1,6 @@
 import React from 'react';
 
-import services from 'src/_data/services';
+import services from 'src/data/services';
 
 const Section = ({ title, links }) => {
   const content = links

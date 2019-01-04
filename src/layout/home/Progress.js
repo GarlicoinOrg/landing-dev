@@ -2,8 +2,8 @@ import React from 'react';
 
 import SectionTitle from 'src/components/SectionTitle';
 
-import Discord from 'src/_assets/faDiscord.svg';
-import Reddit from 'src/_assets/faReddit.svg';
+import Discord from 'src/assets/faDiscord.svg';
+import Reddit from 'src/assets/faReddit.svg';
 
 // const Discord = React.lazy(() => import('src/components/DiscordWidget'))
 

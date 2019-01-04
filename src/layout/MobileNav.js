@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
-import Home from 'src/_assets/faHome.svg';
-import Book from 'src/_assets/faBook.svg';
-import Download from 'src/_assets/faDownload.svg';
+import Home from 'src/assets/faHome.svg';
+import Book from 'src/assets/faBook.svg';
+import Download from 'src/assets/faDownload.svg';
 
 export default () => (
   <nav className="mobileNav">

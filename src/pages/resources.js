@@ -5,7 +5,7 @@ import { Link } from 'gatsby';
 import App from 'src/App';
 import ServiceSection from 'src/components/ServiceSection';
 
-import Recipes from 'src/_assets/recipes.svg';
+import Recipes from 'src/assets/recipes.svg';
 
 export default () => (
   <App wrapper="resourcesWrapper" page="resources">

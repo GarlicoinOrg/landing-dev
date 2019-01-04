@@ -2,7 +2,7 @@ import React from 'react';
 
 import classNames from 'classnames';
 
-import Times from 'src/_assets/faTimes.svg';
+import Times from 'src/assets/faTimes.svg';
 
 // import alert from 'src/_data/alert';
 const alert = {};

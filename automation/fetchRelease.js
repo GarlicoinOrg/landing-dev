@@ -5,7 +5,7 @@ const puppeteer = require('puppeteer');
 const releasesURL = 'https://github.com/GarlicoinOrg/Garlicoin/releases';
 const releaseSelector =
   '.repository-content > div.position-relative.border-top.clearfix > div:nth-child(1) > div > div.d-none.d-md-block.flex-wrap.flex-items-center.col-12.col-md-3.col-lg-2.px-md-3.pb-1.pb-md-4.pt-md-4.float-left.text-md-right.v-align-top > ul > li:nth-child(1) > a > span';
-const relativePath = '../src/_data/downloads.js';
+const relativePath = '../src/data/downloads.js';
 const filePath = path.join(__dirname, relativePath);
 
 const fetch = async () => {

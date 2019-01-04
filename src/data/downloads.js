@@ -1,10 +1,10 @@
 import React from 'react';
 
-import Apple from 'src/_assets/faApple.svg';
-import Windows from 'src/_assets/faWindows.svg';
-import Linux from 'src/_assets/faLinux.svg';
-import Github from 'src/_assets/faGithub.svg';
-import Microchip from 'src/_assets/faMicrochip.svg';
+import Apple from 'src/assets/faApple.svg';
+import Windows from 'src/assets/faWindows.svg';
+import Linux from 'src/assets/faLinux.svg';
+import Github from 'src/assets/faGithub.svg';
+import Microchip from 'src/assets/faMicrochip.svg';
 
 const release = 'v0.17.2';
 

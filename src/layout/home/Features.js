@@ -3,10 +3,10 @@ import React from 'react';
 import SectionTitle from 'src/components/SectionTitle';
 import FeatureBox from 'src/components/home/FeatureBox';
 
-import Shield from 'src/_assets/faShield.svg';
-import Shuttle from 'src/_assets/faSpaceShuttle.svg';
-import Code from 'src/_assets/faCode.svg';
-import Polygon from 'src/_assets/faPolygon.svg';
+import Shield from 'src/assets/faShield.svg';
+import Shuttle from 'src/assets/faSpaceShuttle.svg';
+import Code from 'src/assets/faCode.svg';
+import Polygon from 'src/assets/faPolygon.svg';
 
 export default () => (
   <section className="features">

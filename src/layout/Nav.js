@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 
 import Logo from 'src/components/svg/Logo';
-import Recipes from 'src/_assets/recipes.svg';
+import Recipes from 'src/assets/recipes.svg';
 
 export default () => (
   <nav className="mainNav">

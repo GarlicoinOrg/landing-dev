@@ -1,17 +1,18 @@
 import React from 'react';
-import Helmet from 'react-helmet';
 import { Link } from 'gatsby';
 
 import App from 'src/App';
+import SEO from 'src/components/seo';
 import ServiceSection from 'src/components/ServiceSection';
 
 import Recipes from 'src/assets/recipes.svg';
 
 export default () => (
   <App wrapper="resourcesWrapper" page="resources">
-    <Helmet>
-      <title>Get Started - Garlicoin</title>
-    </Helmet>
+    <SEO
+      title="Get Started - Garlicoin"
+      keywords={['resources', 'services', 'get started']}
+    />
     <section className="intro">
       <h1 className="title">Get Started</h1>
       <p>

@@ -8,7 +8,7 @@ import Microchip from 'src/assets/faMicrochip.svg';
 
 const release = 'v0.17.2';
 
-export const buttons = {
+export default {
   osx: {
     icon: <Apple />,
     desc: 'macOS',
@@ -43,7 +43,6 @@ export const buttons = {
   },
   RPI: {
     icon: <Microchip />,
-    rotate: 90,
     desc: 'Raspberry Pi',
     link: `https://github.com/GarlicoinOrg/Garlicoin/releases/download/${release}/garlicoin-0.17.2-arm-linux-gnueabihf.tar.gz`
   },

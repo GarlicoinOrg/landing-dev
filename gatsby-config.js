@@ -1,6 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: 'Garlicoin'
+    title: 'Garlicoin',
+    description:
+      "The new, friendly, decentralized cryptocurrency you've never heard of.",
+    keywords: 'cryptocurrency, garlicoin, blockchain, open source'
   },
   plugins: [
     `gatsby-plugin-root-import`,
